@@ -1,0 +1,63 @@
+# ***项需要自己写，其他都有默认值，可以不填########################
+
+# 社群券配置项
+[SqCoupon]
+# ***所在地经度
+ActualLng = 117.12640
+# ***所在地纬度
+ActualLat = 36.65655
+
+# # ***所在地经度
+# ActualLng = 116.289881
+# # ***所在地纬度
+# ActualLat = 39.857923
+
+# 提前多少秒注册抢券到token, 同时获取签名
+AheadOptionSec = 60
+# ReqSignApiTimeOutSec < AheadOptionSec, 请求签名api超时时间
+ReqSignApiTimeOutSec = 50
+# 提前多少毫秒开始抢券，>0提前，<0推迟
+AheadFetchMilli = -1
+# 日志输出时 user备注是否打码，当log输出时
+LogRemarkMask = false
+# 最大尝试次数，当遇到一些情况如 时间验证失败...
+MaxTries = 10
+# 间隔多少秒
+IntervalSec = 5
+# 间隔多少微秒
+IntervalMicro = 50
+
+
+# 网络请求配置项
+[Request]
+# ***请求的Ua
+UserAgent = "Mozilla/5.0 (Linux; Android 4.4.2; Nexus 4 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Mobile Safari/537.36"
+# 网络请求多少秒后超时
+TimeOutSec = 20
+# 网络请求最大重试次数
+MaxTries = 1
+# 网络请求间隔多少秒重试
+IntervalSec = 10
+
+
+#日志配置项
+[Logger]
+Level = 'info'
+# 日志等级是否打印彩色
+LevelWithColor = false
+# 是否需要控制台输出
+ConsoleOutPut = true
+# 是否向文件输出
+FileOutPut = true
+# 日志存放位置
+Location = "./data/logs"
+# 日志文件名
+FileName = "MeiTuan.log"
+# 日志文件最大尺寸，单位MB，超过开始分割
+MaxSize = 10
+# 多少天后清理过期日志
+MaxAge = 10
+# 最大存留多少条历史条
+MaxBackups = 10
+# 是否打印函数调用位置，方便反馈bug
+Caller = false

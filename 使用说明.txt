@@ -1,0 +1,25 @@
+1.安装一个nodejs 最新稳定版，当前版本v18.16.0，保证命令行输入node -v 回车能正确显示版本号
+
+
+2.更改data/config/users.json，按照格式添加cookie，remark备注，cookie_str，务必保证token+webdfpid2个字段存在
+
+
+3.添加社群优惠券配置，data/config/sq_coupon.json，按照格式添加
+
+
+4.其他配置data/config/config.toml，***项务必自己改一下，经纬度自己填写一下
+
+
+darwin macos，可能会有日志文件权限问题，chmod -R  700 ./data/logs
+
+经纬度查询网址
+	http://jingweidu.757dy.com/
+	http://www.metools.info/learn/location201.html
+
+检查cookie登录状态：./MeiTuan-windows-4.0-amd64.exe test ck ""
+
+
+window 关闭端口
+netstat -aon|findstr "端口"
+tasklist|findstr "最后一位 端口 id"
+taskkill /f /pid XXX

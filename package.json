@@ -1,0 +1,13 @@
+{
+  "name": "bbbs-mt-go",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start-win": "./MeiTuan-windows-4.0-386.exe",
+    "start-mac": "./MeiTuan-darwin-10.12-amd64"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
