@@ -3,21 +3,21 @@
 # 社群券配置项
 [SqCoupon]
 # ***所在地经度
-ActualLng = 117.12640
+#ActualLng = 117.12640
 # ***所在地纬度
-ActualLat = 36.65655
+#ActualLat = 36.65655
 
 # # ***所在地经度
-# ActualLng = 116.289881
+ActualLng = 117.12640
 # # ***所在地纬度
-# ActualLat = 39.857923
+ActualLat = 36.65655
 
 # 提前多少秒注册抢券到token, 同时获取签名
 AheadOptionSec = 60
 # ReqSignApiTimeOutSec < AheadOptionSec, 请求签名api超时时间
 ReqSignApiTimeOutSec = 50
 # 提前多少毫秒开始抢券，>0提前，<0推迟
-AheadFetchMilli = -1
+AheadFetchMilli = 0
 # 日志输出时 user备注是否打码，当log输出时
 LogRemarkMask = false
 # 最大尝试次数，当遇到一些情况如 时间验证失败...
@@ -60,4 +60,4 @@ MaxAge = 10
 # 最大存留多少条历史条
 MaxBackups = 10
 # 是否打印函数调用位置，方便反馈bug
-Caller = false
+Caller = true
